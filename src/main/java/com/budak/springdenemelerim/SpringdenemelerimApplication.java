@@ -9,19 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
 public class SpringdenemelerimApplication {
-
     public static void main(String[] args) {
         SpringApplication.run(SpringdenemelerimApplication.class, args);
-    }
-
-}
-
-@RestController
-@RequestMapping(path = "/")
-class TestController {
-
-    @RequestMapping(value = "hello/{name}", method = RequestMethod.GET)
-    public String hello(@PathVariable(value = "name") String name) {
-        return "Hello " + name;
     }
 }
